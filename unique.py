@@ -31,7 +31,7 @@ def map_duplicates(characters: Sequence[str]) -> Tuple[Dict[str, List[int]], boo
 
 while True:
     input_string = input("enter a string: ")
-    if str(set(input_string)) == input:
+    if len(set(input_string)) == len(input_string):
         print("The string contains only unique characters")
         continue
     else:
